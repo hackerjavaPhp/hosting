@@ -1,0 +1,501 @@
+/*plan 
+	
+	1.default
+	2.header
+		*nav
+		*slider
+	3.pluses-service
+	4.search-domain	
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********default************/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: #fff;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.container
+{
+	width: 960px;
+	margin:0 auto;
+}
+
+a{text-decoration: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********header************/
+
+header{background-color: #2b2f37}
+
+.bg-header
+{
+	background: url(../img/bg-header.jpg) no-repeat center;
+	background-size: cover;
+}
+
+/* ****nav**** */
+
+.main-menu
+{
+	border-bottom: 1px solid #414248;
+	padding-bottom: 34px;
+}
+
+/*clearfix*/
+.main-menu::after
+{
+	content: "";
+	display: block;
+	clear: both;
+
+	/*position & margin*/
+	position: relative;
+}
+
+.main-menu-logo
+{
+	float: left;
+
+	/*position & margin*/
+	margin:43px 10px 0 90px;
+
+	position: relative;
+
+	/*text*/
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	/*color & bg*/
+	color:#ebebeb;
+}
+
+.main-menu-logo::before
+{
+	/*text*/
+	content: "";
+
+
+	display: inline-block;
+	width: 56px;
+    height: 38px;
+
+    /*color & bg*/
+	background-image: url(../img/logo.png);
+
+	/*position & margin*/
+	position: absolute;
+	left: -76px;
+	bottom: -5px;
+}
+
+.main-menu-logo-part{color:#c44338;}
+
+.main-menu-list
+{
+	float: right;
+
+	/*position & margin*/
+	margin-top: 44px;
+	margin-right: 87px;
+}
+
+.main-menu-list-l
+{
+	display: inline-block;
+
+	/*text*/
+	font-size: 12px;
+	font-weight: 800;
+
+	/*position & margin*/
+	margin-left: 29px;
+}
+
+.main-menu-list-l a{color: #eaeaea;}
+
+.main-menu-list-l a:hover{text-decoration: underline;}
+
+.main-menu-list-l:first-child
+{
+	margin-left: 0;
+}
+
+.main-menu-button
+{
+	float: right;
+	border: 1px solid #e84c3d;
+	width: 100px;
+	height: 41px;
+
+	/*text*/
+	font-size: 12px;
+
+	/*color & bg*/
+	color:#f5f5f5;
+	background: none;
+
+	/*position & margin*/
+	margin-right: 17px;
+	margin-top: 31px;
+}
+
+.main-menu-list ,
+.main-menu-button
+{
+	text-transform: uppercase;
+}
+
+
+/* ****slider**** */
+
+.header-slider{padding-bottom: 33px;}
+
+.header-slider-caption
+{
+	/*text*/
+	font-size: 40px;
+	font-family: 'Roboto Thin', arial;
+	text-align: center;
+	font-weight: 200;
+
+	/*position & margin*/
+	padding-top: 104px;
+}
+
+.header-slider-decision
+{	
+	max-width: 480px;
+
+	/*text*/
+	text-align: center;
+	margin: 0 auto;
+
+	/*position & margin*/
+	padding-top: 23px;
+}
+
+.header-slider-caption , 
+.header-slider-decision ,
+.header-slider-button ,
+.header-slider-link
+{
+	color: #fff;
+}
+
+.header-slider-button
+{
+	width: 220px;
+	height: 50px;
+	border: none;
+
+	/*text*/
+	font-size: 14px;
+	font-weight: 800;
+
+	/*position & margin*/
+	margin:0 auto;
+	margin-top: 49px;
+
+
+	/*color & bg*/
+	background: #e84c3d;
+}
+
+.header-slider-button ,
+.header-slider-link
+{
+	display: block;
+}
+
+.header-slider-link
+{
+	/*text*/
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 12px;
+
+	/*position & margin*/
+	margin-top:25px;
+}
+
+.header-slider-radio
+{
+	/*text*/
+	text-align: center;
+
+	/*position & margin*/
+	margin-top:90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********pluses-service************/
+
+.pluses-service{background-color: #2b2f37;}
+
+/*clearfix*/
+.pluses-service::after
+{
+	content: "";
+	display: block;
+	clear: both;
+
+	/*position & margin*/
+	position: relative;
+}
+
+.pluses-service-plus
+{
+	width: 320px;
+	float: left;
+
+	/*position & margin*/
+	padding-bottom: 56px;
+}
+
+.pluses-service-plus-image ,
+.pluses-service-plus-link
+{
+	display: block;
+}
+
+.pluses-service-plus-image
+{	
+	/*position & margin*/
+	margin: 0 auto;
+	margin-top: 59px;
+}
+
+.pluses-service-plus-caption
+{
+	/*position & margin*/
+	margin-top: 42px;
+
+	/*text*/
+	font-size: 18px;
+	font-family: 'Roboto', arial;
+
+	/*color & bg*/
+	color:#fff;
+}
+
+.pluses-service-plus-decision
+{
+	width: 278px;
+	margin: 0 auto;
+
+	/*color & bg*/
+	color: #606879;
+
+	/*position & margin*/
+	margin-top: 21px;
+}
+
+.pluses-service-plus-caption ,
+.pluses-service-plus-decision ,
+.pluses-service-plus-link
+{
+	/*text*/
+	text-align: center;
+}
+
+.pluses-service-plus-link,
+.pluses-service-plus-caption
+{
+	/*text*/
+	text-transform: uppercase;
+}
+
+.pluses-service-plus-link
+{	
+	/*color & bg*/
+	color: #e84c3d;
+
+	/*text*/
+	text-decoration: underline;
+	font-size: 14px;
+
+	/*position & margin*/
+	margin-top: 29px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********search-domain************/
+
+.search-domain-caption , 
+.search-domain-decision
+{
+	text-align: center;
+}
+
+.search-domain-caption
+{
+	/*text*/
+	font-size: 40px;
+	font-family: 'Roboto Light', arial;
+	font-weight: 400;
+
+	/*position & margin*/
+	padding-top: 42px;
+}
+
+.search-domain-decision
+{
+	max-width: 576px;
+	/*text*/
+	font-family: 'Roboto Regular', arial;
+	font-size: 14px;
+
+	/*position & margin*/
+	padding-top: 29px;
+	margin: 0 auto;
+}
+
+.search-domain-form
+{
+	width: 640px;
+	height: 68px;
+
+	/*position & margin*/
+	margin: 37px auto;
+
+	position: relative;
+
+	/*color & bg*/
+	background: rgb(146, 60, 75);
+	background: -webkit-linear-gradient(77deg, rgb(146, 60, 75) 0%, rgb(55, 51, 77) 100%);
+	background: -o-linear-gradient(77deg, rgb(146, 60, 75) 0%, rgb(55, 51, 77) 100%);
+	background: -ms-linear-gradient(77deg, rgb(146, 60, 75) 0%, rgb(55, 51, 77) 100%);
+	background: linear-gradient(77deg, rgb(146, 60, 75) 0%, rgb(55, 51, 77) 100%);
+}
+
+.search-domain-form::before
+{
+    content: "http://";
+    position: absolute;
+    left: 24px;
+    top: 27px;
+
+    font-size: 14px;
+}
+
+.search-domain-form-inp
+{
+	width: 350px;
+	height: 50px;
+
+	/*position & margin*/
+	padding-left: 60px;
+	margin-left: 11px;
+}
+
+.search-domain-form-sel ,
+.search-domain-form-btn
+{
+	height: 50px;
+	margin: 0;
+}
+
+.search-domain-form-sel 
+{
+	width: 70px;
+    border: none;
+    border-right: 12px solid #fff;
+}
+
+.search-domain-form-btn
+{
+	width: 140px;
+	cursor: pointer;
+
+	/*color & bg*/
+	background-color: #e84c3d;
+	color: #fceceb;
+
+	/*text*/
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.search-domain-form-btn:hover{background-color: #FF402F}
+
+.search-domain-form-inp ,
+.search-domain-form-sel ,
+.search-domain-form-btn
+{
+	outline: none;
+	float: left;
+
+	/*position & margin*/
+	margin-top: 10px;
+}
+
+.search-domain-form-inp ,
+.search-domain-form-btn
+{
+	border: none;
+}
