@@ -171,6 +171,7 @@ header{background-color: #2b2f37}
 	border: 1px solid #e84c3d;
 	width: 100px;
 	height: 41px;
+	cursor: pointer;
 
 	/*text*/
 	font-size: 12px;
@@ -184,6 +185,11 @@ header{background-color: #2b2f37}
 	margin-top: 31px;
 }
 
+.main-menu-button:hover
+{
+	background-color: #e84c3d;
+}
+
 .main-menu-list ,
 .main-menu-button
 {
@@ -194,6 +200,10 @@ header{background-color: #2b2f37}
 /* ****slider**** */
 
 .header-slider{padding-bottom: 33px;}
+
+.header-slider-info{display: none;}
+
+#header-slider-b-1{display: block}
 
 .header-slider-caption
 {
@@ -232,6 +242,7 @@ header{background-color: #2b2f37}
 	width: 220px;
 	height: 50px;
 	border: none;
+	cursor: pointer;
 
 	/*text*/
 	font-size: 14px;
@@ -860,6 +871,7 @@ header{background-color: #2b2f37}
 	width: 100%;
 	height: 51px;
 	border: none;
+	cursor: pointer;
 
 	/*color & bg*/
 	background: #2c3039;
@@ -1149,7 +1161,8 @@ header{background-color: #2b2f37}
 	max-width: 780px;
 	height: 183px;
 	opacity: .5;
-	transition: opacity 1s;
+	transition: opacity .5s;
+	transition: transform 1s;
 	border-bottom: 1px solid #ebebeb;
 
 	/*position & margin*/
@@ -1157,7 +1170,11 @@ header{background-color: #2b2f37}
 	margin-top: 27px;
 }
 
-.blog-news:hover{opacity: 1;}
+.blog-news:hover
+{
+	transform: scale(1.05);
+	opacity: 1;
+}
 
 .blog-news-wrapper
 {
@@ -1576,14 +1593,15 @@ header{background-color: #2b2f37}
 	font-weight: 800;
 }
 
-.footer-lists-link
-{
-	/*position & margin*/
-	margin-top: 20px;
+.footer-lists-link{margin-top: 20px;}
 
-	/*color & bg*/
-	color: #7a7a7a;
+.footer-lists-link a{color: #7a7a7a;}
+
+.footer-lists-link a:hover
+{
+	text-decoration: underline;
 }
+
 
 .footer-info-phone
 {
